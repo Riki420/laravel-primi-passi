@@ -14,5 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'benvenuto' => 'Benvenuto nella Home!',
+        'sottotitolo' => 'Questo è il sottotitolo della Home'
+    ];
+    return view('home', $data);
+});
+
+Route::get('/features', function () {
+    $data = [
+        'titolo' => 'Titolo Features',
+        'sottotitolo' => 'Sottotitolo Features'
+    ];
+    return view('features', $data);
+});
+
+Route::get('/pricing', function () {
+    $data = [
+        'titolo' => 'Titolo Pricing',
+        'sottotitolo' => 'Sottotitolo Pricing'
+    ];
+    return view('pricing', $data);
 });
