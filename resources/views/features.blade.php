@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Features</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css' integrity='sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==' crossorigin='anonymous'/>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css' integrity='sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==' crossorigin='anonymous'/>
 
 </head>
@@ -21,8 +22,7 @@
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-danger me-2 text-white">Login</button>
-        <button type="button" class="btn btn-danger">Sign-up</button>
+        <i class="far fa-user-circle fs-2 btn text-white"></i>
       </div>
     </header>
     <!--Main-->
@@ -30,6 +30,8 @@
         <div>
             <h1>{{$titolo}}</h1>
             <p>{{$sottotitolo}}</p>
+            <img src="{{$pic}}" alt="pic-features" class="rounded-top">
+            <p><em>{{$bio}}</em></p>
         </div> 
     </main> 
 </body>
